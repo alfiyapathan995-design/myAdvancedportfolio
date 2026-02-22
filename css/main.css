@@ -1,0 +1,74 @@
+/* =============================
+   CSS VARIABLES (Theme System)
+============================= */
+:root {
+  --primary-color: #4361ee;
+  --secondary-color: #3a0ca3;
+  --accent-color: #f72585;
+  --text-color: #222;
+  --bg-color: #ffffff;
+  --spacing: 1rem;
+  --radius: 8px;
+}
+
+/* Dark Theme */
+.theme-dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Buttons (BEM) */
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn--primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn--secondary {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  margin: 3rem 0 2rem;
+  font-size: 2rem;
+}
+.success-message {
+  margin-top: 10px;
+  color: green;
+  font-weight: 600;
+}
+.success-message {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+  display: none;
+}
